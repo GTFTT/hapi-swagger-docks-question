@@ -4,14 +4,24 @@
   "description": "Testing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "install_old_dependencies": "npm i hapi-swagger@9.1.1 joi@13.1.2 hapi@17.4.0 vision@5.3.2 inert@5.1.0 --force",
+    "uninstall_old_dependencies": "npm uninstal hapi-swagger joi hapi vision inert",
+    "install_new_dependencies": "npm i hapi-swagger joi hapi vision inert --force",
+    "uninstall_new_dependencies": "npm uninstal hapi-swagger joi hapi vision inert"
   },
   "keywords": [],
   "author": "GT",
   "license": "ISC",
   "dependencies": {
+    "convict": "^4.2.0",
     "hapi": "^17.4.0",
     "hapi-swagger": "^9.1.1",
-    "joi": "^13.1.2"
+    "inert": "^5.1.0",
+    "joi": "^13.1.2",
+    "lodash": "^4.17.11",
+    "nodemon": "^1.17.4",
+    "vision": "^5.3.2"
   }
 }
